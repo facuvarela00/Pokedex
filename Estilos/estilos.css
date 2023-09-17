@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(225,225,225);
+}
+
+/*///////////////////////////////////////////HEADER///////////////////////////////////////////*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(211,63,89);
+    box-sizing: border-box;
+
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
+}
+header article{
+    padding: 20px;
+}
+
+/*APARTADO_LOGO*/
+.isologo_contenedor{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+
+}
+.logo_header{
+    height: 70px;
+    width: 70px;
+}
+.titulo_header{
+    font-size: 40px;
+    font-family: Georgia;
+    color:rgb(242,242,242);
+}
+/*APARTADO_BUSQUEDA*/
+.buscador_contenedor{
+    flex: 7;
+    text-align: center;
+}
+#buscador{
+    height: 40px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 5px;
+    width: 700px;
+}
+#envio_formulario{
+    height: 44px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-left: 5px;
+}
+#envio_formulario:hover{
+    background-color: rgb(179, 47, 68);
+    color:rgb(242,242,242);
+}
+/*APARTADO_LOGIN*/
+.login_contenedor form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.login_contenedor form article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.login_contenedor form article input{
+    padding:10px;
+    width: 100%;
+
+}
+#usuario{
+    border-top-left-radius: 30px;
+}
+#pass{
+    border-bottom-left-radius: 30px;
+}
+#ingresar{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-left: 0px;
+    padding-bottom:10px;
+    width: 57px;
+    height: 105px;
+    background-image: url("../Imagenes/Otras/pokeball2.png");
+    background-size: cover;
+
+}
+
+#ingresar:hover{
+    background-image: url("../Imagenes/Otras/pokeball1.png");
+}
+/*///////////////////////////////////////////DAR ALTA POKEMON///////////////////////////////////////////*/
+.boton_añadir {
+    border: 1px solid black;
+    border-radius:20px;
+    background-color: rgb(211,63,89);
+    width: 600px;
+}
+.boton_añadir a{
+    text-decoration: none;
+    color: white;
+}
+.boton_añadir:hover {
+    background-color: rgb(179, 47, 68);
+}
+
+
+.contenedor_dar_alta, .formulario_alta{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 30px;
+}
+.formulario_alta{
+    background-color: rgb(211,63,89);
+    width:700px;
+    border-radius: 30px;
+}
+.contenedor_dar_alta label{
+    padding:10px;
+    color: white;
+    font-family: "Bell MT";
+}
+.contenedor_dar_alta input, #tipos{
+    border: 1px solid white;
+    border-radius: 5px ;
+    width: 600px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(179, 47, 68);
+}
+/*#tipos{
+    width: 625px;
+
+}*/
+.contenedor_dar_alta input:hover{
+    border: 1px solid black;
+    background-color: white;
+    color:black;
+}
+.contenedor_dar_alta input::placeholder{
+    color:white;
+}
+.contenedor_dar_alta input:hover::placeholder{
+    color:black;
+}
+
+
+

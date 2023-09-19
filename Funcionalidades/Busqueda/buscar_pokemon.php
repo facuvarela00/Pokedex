@@ -15,8 +15,6 @@
 
     if(!isset($_SESSION["usuario"]) ){
         include_once("Pokedex/header.php");
-        echo "<div> Iniciar sesion para buscar </div>";
-        exit();
     }
 
     include_once("buscar.php");

@@ -11,7 +11,8 @@
 <body>
 <header>
     <?php
-    include_once("header_logged.php");
+    session_start();
+    include_once("header.php");
     ?>
 
 </header>

@@ -12,13 +12,7 @@
 <header>
     <?php
     session_start();
-
-    if(isset($_SESSION["usuario"]) ){
-        include_once("../header_logged.php");
-    }else{
         include_once("../header.php");
-        exit();
-    }
     ?>
 
 </header>

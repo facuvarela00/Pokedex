@@ -1,6 +1,6 @@
 CREATE DATABASE pokedex;
 
-CREATE TABLE pokemones (
+CREATE TABLE pokemon (
                            id_incremental INT(11) PRIMARY KEY AUTO_INCREMENT,
                            id INT(30),
                            nombre varchar(50),

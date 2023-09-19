@@ -52,7 +52,7 @@
             mostrarPokemon($pokemon);
         };
     }else{
-        header("Location: ../../index.php");
+        header("Location: /Pokedex/index.php");
         exit();
     };
     ?>

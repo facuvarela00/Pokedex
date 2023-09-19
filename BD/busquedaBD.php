@@ -23,7 +23,7 @@ function buscarPokemonPorNumero($num){
     $conexion = new mysqli("localhost", "root", "", "pokedex");
     $sql1="select * from pokemon where id ='$num'";
     $result = $conexion->query($sql1);
-    $resultAsArray = $result->fetch_all(MYSQLI_ASSOC);
+    $resultAsArray = $result->fetch_array();
     return $resultAsArray;
 }
 ?>

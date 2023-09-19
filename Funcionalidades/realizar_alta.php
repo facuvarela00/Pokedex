@@ -25,7 +25,7 @@ $consulta="INSERT INTO pokemon(id, nombre, tipo, descripcion, imagen) VALUES ('$
 
 $resultado_consulta=mysqli_query($conexion,$consulta);
 if($resultado_consulta){
-    header("Location:../index_logged.php");
+    header("Location:../index.php");
 }else{
     echo "Error al realizar la consulta";
 }

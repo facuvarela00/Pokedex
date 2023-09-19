@@ -155,5 +155,84 @@ header article{
     color:black;
 }
 
+/*///////////////////////////////////////////MOSTRAR REGISTROS DE POKEMON///////////////////////////////////////////*/
+
+.registro_pokemon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding:2% 25% 1% 25%;
+    box-sizing: border-box;
+}
+
+.registro_pokemon article{
+    width: 500px;
+    height: 300px;
+    text-align: center;
+}
+.icono_pokemon_registro,.imagen_modificar,.imagen_eliminar{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-size: cover;
+}
+.imagen_modificar{
+    background-image: url("../Imagenes/Otras/editar_poke.png");
+}
+.imagen_modificar:hover{
+    background-image: url("../Imagenes/Otras/editar_poke2.png");
+}
+.imagen_eliminar{
+    background-image: url("../Imagenes/Otras/borrar_poke.png");
+}
+.imagen_eliminar:hover{
+    background-image: url("../Imagenes/Otras/borrar_poke2.png");
+}
+
+.col_icono_pokemon{
+    background-color: rgb(211,63,89);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    flex:10%;
+}
+
+
+.col_data{
+    background-color: ghostwhite;
+    flex:50%;
+}
+.col_imagen_poke{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211,63,89);
+    flex:30%;
+}
+.col_modificaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 47, 68);
+    flex: 10%;
+}
+
+.mostrar_tipo_pokemon{
+    width:100px;
+    height: 50px;
+}
+.mostrar_imagen_pokemon{
+    width:200px;
+    height: 200px;
+}
+.centrar_boton{
+    text-align: center;
+}
 
 

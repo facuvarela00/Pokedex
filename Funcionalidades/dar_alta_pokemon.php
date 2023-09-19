@@ -23,12 +23,12 @@
 
 </header>
 <main class="contenedor_dar_alta">
-    <form class="formulario_alta" action="dar_alta_pokemon" enctype="multipart/form-data" method="POST">
-        <label for="numero"> ID del Pokémon </label>
+    <form class="formulario_alta" action="realizar_alta.php" enctype="multipart/form-data" method="POST">
+        <label for="id"> ID del Pokémon </label>
         <input type="number" name="id" id="id" placeholder="Ingrese el id del Pokémon" required>
-        <label for="numero"> Nombre del Pokémon </label>
+        <label for="nombre"> Nombre del Pokémon </label>
         <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del Pokémon" required>
-        <label for="numero"> Tipo del Pokémon </label>
+        <label for="tipo"> Tipo del Pokémon </label>
         <select id="tipos" name="tipos">
             <option value="agua">Agua</option>
             <option value="bicho">Bicho</option>
@@ -46,9 +46,9 @@
             <option value="veneno">Veneno</option>
             <option value="volador">Volador</option>
         </select>
-        <label for="numero"> Descripción del Pokémon </label>
+        <label for="descripcion"> Descripción del Pokémon </label>
         <input type="text" name="descripcion" id="descripcion" placeholder="Ingrese la descripción del Pokémon" required>
-        <label for="numero"> Imagen del Pokémon </label>
+        <label for="imagen"> Imagen del Pokémon </label>
         <input type="file" name="imagen" id="imagen" required>
         <br>
         <input class="registrar" type="submit" value="Registrar Pokémon">

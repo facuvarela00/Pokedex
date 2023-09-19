@@ -6,6 +6,7 @@ $pass = isset( $_POST["pass"])?$_POST["pass"] : "";
 
 if ( validarUsuario($usuario, $pass) == TRUE){              //VALIDA LOS USUARIOS EN BUSCA DE VERDADERO. SI ES EL CASO INGRESA A LA SESION USUARIO Y NOS REDIRIGE A LA PAGINA
     $_SESSION["usuario"] = $usuario;                        // LOGGEADA, SINO NOS REDIRIGE A LA NORMAL SIN LOGGEAR,
+    $_SESSION['var'] = '2';
     header("location:../index.php");
     exit();
 } else {

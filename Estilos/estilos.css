@@ -40,6 +40,7 @@ header article{
     color:rgb(242,242,242);
 }
 /*APARTADO_BUSQUEDA*/
+
 .buscador_contenedor{
     flex: 7;
     text-align: center;
@@ -97,6 +98,21 @@ header article{
 
 #ingresar:hover{
     background-image: url("../Imagenes/Otras/pokeball1.png");
+}
+.texto_header{
+    color: white;
+    font-family: "AniMe Matrix - MB_EN";
+}
+
+.boton_cerrar_sesion{
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100%;
+}
+.boton_cerrar_sesion:hover{
+    background-color: rgb(211,63,89);
+    border: 1px solid white;
+    color: white;
 }
 /*///////////////////////////////////////////DAR ALTA POKEMON///////////////////////////////////////////*/
 .boton_añadir {
@@ -221,6 +237,7 @@ header article{
     align-items: center;
     background-color: rgb(179, 47, 68);
     flex: 10%;
+    padding: 0 20px 0 20px;
 }
 
 .mostrar_tipo_pokemon{

@@ -9,7 +9,7 @@ $usuario = $_SESSION["usuario"];
 
 include_once("../BD/conectar_a_bd.php");
 
-$carpetaContenedora= $_SERVER['DOCUMENT_ROOT'] . "/Pokédex/Imagenes/Pokemon/";
+$carpetaContenedora= $_SERVER['DOCUMENT_ROOT'] . "/Pokedex/Imagenes/Pokemon/";
 
 $id = isset($_POST["id"]) ? $_POST["id"] : "";
 $nombre = isset($_POST["nombre"]) ? $_POST["nombre"] : "";

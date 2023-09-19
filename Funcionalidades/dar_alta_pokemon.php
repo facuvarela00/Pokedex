@@ -5,17 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../Estilos/estilos.css">
+    <link rel="stylesheet" href="/Pokedex/Estilos/estilos.css">
     <title>Pokédex</title>
 </head>
 <body>
-<header>
     <?php
     session_start();
+        $_SESSION['var'] = '1';
         include_once("../header.php");
     ?>
-
-</header>
 <main class="contenedor_dar_alta">
     <form class="formulario_alta" action="realizar_alta.php" enctype="multipart/form-data" method="POST">
         <label for="id"> ID del Pokémon </label>

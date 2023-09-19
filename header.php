@@ -8,7 +8,7 @@
     </article>
     
     <article class="buscador_contenedor">
-     <form action="buscar_pokemon.php">
+     <form action="Funcionalidades/Busqueda/buscar.php">
     <label for="busqueda"></label>
     <input type="text" id="buscador" name="buscador" placeholder="Buscar Pokémon">
     <input type="submit" id="envio_formulario" name="envio_formulario" value="¿Quién es éste Pokémon?">

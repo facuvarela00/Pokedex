@@ -2,6 +2,10 @@
     include_once ("Pokedex/BD/conectar_a_bd.php");
 
     if (isset($_GET["buscador"])) {
+        $aBuscar=$_GET['buscador'];
+        $pokemonPorNombre = buscarPokemonPorNombre($aBuscar);
+        $pokemonPorTipo=buscarPokemonPorTipo($aBuscar);
+        $pokemonPorNumero=buscarPokemonPorNumero($aBuscar);
         //buscar por nombre
             // -> vista individual = true
         //buscar por numero
@@ -9,8 +13,7 @@
         //buscar por tipo
             // -> vista individual = false
     }else {
-        // -> vista individual = false (mostrar todos)
-        //header("Location: index.php");
+        header("Location: ../../index.php");
     }
 
     /*

@@ -184,7 +184,6 @@ header article{
 }
 
 .registro_pokemon article{
-    width: 500px;
     height: 300px;
     text-align: center;
 }
@@ -217,7 +216,9 @@ header article{
     width: 100px;
     flex:10%;
 }
-
+.col_icono_pokemon:hover{
+    background-color: rgb(179, 47, 68);
+}
 
 .col_data{
     background-color: ghostwhite;

@@ -15,8 +15,8 @@ function mostrarLogged($resultado){
     echo '<img class="mostrar_imagen_pokemon" src="/Pokedex/Imagenes/Pokemon/'.$resultado['imagen'].'" alt="">';
     echo '</article>';
     echo '<article class="col_modificaciones">';
-    echo '<a class="imagen_modificar" href="/Pokedex/Funcionalidades/Informacion/visualizarPokemon.php?id='.$resultado["id"].'&nombre='.$resultado["nombre"].'&tipo='.$resultado["tipo"].'&descripcion='.$resultado["descripcion"].'&imagen='.$resultado["imagen"].'"></a>';
-    echo '<a class="imagen_eliminar" href="#"></a>';
+    echo '<a class="imagen_modificar" href="/Pokedex/Funcionalidades/Modificacion/modificar.php?id='.$resultado["id"].'&nombre='.$resultado["nombre"].'&tipo='.$resultado["tipo"].'&descripcion='.$resultado["descripcion"].'&imagen='.$resultado["imagen"].'"></a>';
+    echo '<a class="imagen_modificar" href="/Pokedex/Funcionalidades/Modificacion/eliminar.php?id='.$resultado["id"].'&nombre='.$resultado["nombre"].'&tipo='.$resultado["tipo"].'&descripcion='.$resultado["descripcion"].'&imagen='.$resultado["imagen"].'"></a>';
     echo '</article>';
     echo '</section>';
 }

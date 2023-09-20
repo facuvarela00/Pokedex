@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url('/Pokedex/Imagenes/Otras/fondo2.webp'); 
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarjeta{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    border: 2px solid rgb(211,63,89);
+    border-radius: 15%;
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40em;
+    height: auto;
+}
+img{
+    width: 23em;
+    height: auto;
+}
+.tarjeta > div{
+    width: calc(50%);
+}
+.imagenPokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.datos{
+    color: rgb(211,63,89);
+    text-align: center;
+}
+.datos2{
+    color: black;
+    text-align: center;
+
+}

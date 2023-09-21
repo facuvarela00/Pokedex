@@ -1,9 +1,11 @@
 <?php
 session_start();
+$_SESSION['var'] = '1';
 if( !isset($_SESSION["usuario"]) ){
     header("location:index.php");
     exit();
 }
+
 ?>
 <!doctype html>
 <html lang="es">

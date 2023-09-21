@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION['var'] = '1';
+?>
 <!doctype html>
 <html lang="ES">
 <head>
@@ -10,8 +14,6 @@
 </head>
 <body>
     <?php
-    session_start();
-        $_SESSION['var'] = '1';
         include_once("../header.php");
     ?>
 <main class="contenedor_dar_alta">

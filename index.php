@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="ES">
 <head>
@@ -9,12 +12,12 @@
     <title>Pokédex</title>
 </head>
 <body>
-    <?php
-    session_start();
-        include_once("header.php");
-    ?>
+<?php
+include_once("header.php");
+?>
 <main>
     <?php
+
     include_once ("BD/conectar_a_bd.php");
     include_once ("Funcionalidades/funciones.php");
     $consulta = "SELECT * FROM pokemon";
@@ -25,6 +28,7 @@
         foreach ( $resultados as $resultado){
            mostrarLogged($resultado);
         }
+
         echo'<section class="centrar_boton">
         <button class="boton_añadir"><a  href="Funcionalidades/dar_alta_pokemon.php">Añadir Registro</a></button>
         </section>';

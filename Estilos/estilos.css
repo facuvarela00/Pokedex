@@ -5,6 +5,7 @@ body {
     background-color: rgb(225,225,225);
 }
 
+
 /*///////////////////////////////////////////HEADER///////////////////////////////////////////*/
 header{
     display: flex;
@@ -253,4 +254,7 @@ header article{
     text-align: center;
 }
 
-
+.texto_titulos{
+    font-family: Verdana;
+    color: white;
+}

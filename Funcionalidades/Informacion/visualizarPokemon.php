@@ -30,10 +30,10 @@
         echo'<img src="/Pokedex/Imagenes/Pokemon/'.$imagen.'" alt="Pokemon">';
         echo'</div>
              <div class="info">';
-        echo '<h1 class="datos">Nombre:'.$nombre.'</h1>';
+        echo '<h1 class="datos">Nombre<br>'.$nombre.'</h1>';
         echo '<h2 class="datos2">'.$id.'</h2>';
-        echo '<h3 class="datos">Tipo: </h3> <h5 class="datos2">'.$tipo.'</h5>';
-        echo ' <h3 class="datos">Descripción: </h3> <h5 class="datos2">'.$descripcion.'.</h5>';
+        echo '<h3 class="datos">Tipo</h3> <h5 class="datos2"><img  class="mostrar_tipo_pokemon" src="/Pokedex/Imagenes/Tipo/'.$tipo.'" alt="Pokemon">'.'</h5>';
+        echo ' <h3 class="datos">Descripción</h3> <h5 class="datos2">'.$descripcion.'.</h5>';
         echo '</div>
              </div>';
         ?>

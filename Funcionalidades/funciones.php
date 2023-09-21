@@ -1,5 +1,6 @@
 <?php
 function mostrarLogged($resultado){
+
     echo '<section class="registro_pokemon">';
     echo '<a href="/Pokedex/Funcionalidades/Informacion/visualizarPokemon.php?id='.$resultado["id"].'&nombre='.$resultado["nombre"].'&tipo='.$resultado["tipo"].'&descripcion='.$resultado["descripcion"].'&imagen='.$resultado["imagen"].'">';
     echo '<article class="col_icono_pokemon">';

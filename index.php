@@ -25,14 +25,13 @@ include_once("header.php");
     $resultados =  $respuesta->fetch_all(MYSQLI_ASSOC);
 
     if(isset($_SESSION["usuario"])){
+        echo'<br><section class="centrar_boton">
+        <button class="boton_añadir"><a  href="Funcionalidades/dar_alta_pokemon.php">Añadir Registro</a></button>
+        </section>';
         foreach ( $resultados as $resultado){
            mostrarLogged($resultado);
         }
-
-        echo'<section class="centrar_boton">
-        <button class="boton_añadir"><a  href="Funcionalidades/dar_alta_pokemon.php">Añadir Registro</a></button>
-        </section>';
-        }
+       }
 
     else{
         foreach ($resultados as $resultado){
@@ -44,3 +43,6 @@ include_once("header.php");
 
 </body>
 </html>
+<?php
+include_once("BD/desconectar_de_bd.php");
+?>

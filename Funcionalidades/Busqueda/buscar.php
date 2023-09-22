@@ -10,51 +10,45 @@
 </head>
 <body>
 
-    <?php
-    session_start();
-
-    include_once("../../header.php");
-    ?>
+<?php
+session_start();
+include_once("../../header.php");
+?>
 
 <main>
     <?php
     include_once("buscar_pokemon.php");
+    include_once("../funciones.php");
 
-    function mostrarPokemon($pokemon){
-        echo '<section class="registro_pokemon">';
-        echo '<article class="col_icono_pokemon">';
-        echo '<img class="icono_pokemon_registro" src="/Pokedex/Imagenes/Otras/pokeball_registro.png">';
-        echo '</article>';
-        echo '<article class="col_data">';
-        echo '<h2 class="mostrar_id_pokemon">#'.$pokemon["id"].'</h2><br>';
-        echo '<h2 class="mostrar_nombre_pokemon">'.$pokemon['nombre'].'</h2><br>';
-        echo '<img class="mostrar_tipo_pokemon" src="/Pokedex/Imagenes/Tipo/'.$pokemon['tipo'].'">';
-        echo '</article>';
-        echo '<article class="col_imagen_poke">';
-        echo '<img class="mostrar_imagen_pokemon" src="/Pokedex/Imagenes/Pokemon/'.$pokemon['imagen'].'" alt="">';
-        echo '</article>';
-        echo '<article class="col_modificaciones">';
-        echo '<a class="imagen_modificar" href="#"></a>';
-        echo '<a class="imagen_eliminar" href="#"></a>';
-        echo '</article>';
-        echo '</section>';
-    };
+    if( isset($_SESSION["usuario"]) ){
+        if($pokemonPorNombre!=null){
+            mostrarLogged($pokemonPorNombre);
+        }else if ($pokemonPorNumero!=null){                 // UN IF POR SI EL USUARIO ESTA LOGGED
+            mostrarLogged($pokemonPorNumero);
+        }else if($pokemonPorTipo!=null){
+            foreach ( $pokemonPorTipo as $pokemon){
+                mostrarLogged($pokemon);}
+        }else{
+            header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
+            exit();
+        }}
 
 
-    if($pokemonPorNombre!=null){
-        mostrarPokemon($pokemonPorNombre);
-
-    }else if($pokemonPorNumero!=null){
-        mostrarPokemon($pokemonPorNumero);
-    }
-    else if($pokemonPorTipo!=null){
-        foreach ( $pokemonPorTipo as $pokemon){
-            mostrarPokemon($pokemon);
+    else if(!isset($_SESSION["usuario"])){
+        if ($pokemonPorNombre!=null){
+            mostrar($pokemonPorNombre);}                        // UN ELSE IF POR SI EL USUARIO NO ESTA LOGGED
+        else if($pokemonPorNumero!=null){
+            mostrar($pokemonPorNumero);}
+        else if($pokemonPorTipo!=null){
+            foreach ( $pokemonPorTipo as $pokemon){
+                mostrar($pokemon);
+            };}
+        else{
+            header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
+            exit();
         };
-    }else{
-        header("Location: /Pokedex/index.php");
-        exit();
-    };
+    }
+
     ?>
 </main>
 

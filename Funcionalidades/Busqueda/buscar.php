@@ -27,8 +27,12 @@
         mostrarLogged($pokemonPorNumero);
         }else if($pokemonPorTipo!=null){
         foreach ( $pokemonPorTipo as $pokemon){
-        mostrarLogged($pokemon);}}
-        }
+        mostrarLogged($pokemon);}
+        }else{
+        header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
+        exit();
+        }}
+
 
     else if(!isset($_SESSION["usuario"])){
         if ($pokemonPorNombre!=null){
@@ -38,13 +42,13 @@
         else if($pokemonPorTipo!=null){
         foreach ( $pokemonPorTipo as $pokemon){
             mostrar($pokemon);
+        };}
+        else{
+            header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
+            exit();
         };
     }
-    }
-    else{
-        header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
-        exit();
-    };
+
     ?>
 </main>
 

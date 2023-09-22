@@ -13,9 +13,8 @@ session_start();
 </head>
 <body>
 
-
 <?php
-include_once("../../header.php");
+include_once ("header_buscar.php");
 ?>
 
 <main>D
@@ -27,20 +26,20 @@ include_once("../../header.php");
         if($pokemonPorNombre!=null){
 
         mostrarLogged($pokemonPorNombre);
-        }else if ($pokemonPorNumero!=null){                 // UN IF POR SI EL USUARIO ESTA LOGGED
+        }else if ($pokemonPorNumero!=null){
         mostrarLogged($pokemonPorNumero);
         }else if($pokemonPorTipo!=null){
         foreach ( $pokemonPorTipo as $pokemon){
         mostrarLogged($pokemon);}
         }else{
-        header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
+        header("Location: /Pokedex/index.php");
         exit();
         }}
 
 
     else if(!isset($_SESSION["usuario"])){
         if ($pokemonPorNombre!=null){
-        mostrar($pokemonPorNombre);}                        // UN ELSE IF POR SI EL USUARIO NO ESTA LOGGED
+        mostrar($pokemonPorNombre);}
          else if($pokemonPorNumero!=null){
         mostrar($pokemonPorNumero);}
         else if($pokemonPorTipo!=null){
@@ -48,12 +47,23 @@ include_once("../../header.php");
             mostrar($pokemon);
         };}
         else{
-            header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
+            header("Location: /Pokedex/index.php");
             exit();
         };
     }
 
+    /*if (isset($_GET['busqueda'])) {
+// Procesa la búsqueda
+$_SESSION['busqueda'] = $_GET['busqueda'];
+} elseif (isset($_SESSION['busqueda'])) {
+// Mostrar resultados basados en la búsqueda almacenada en la sesión
+$busqueda = $_SESSION['busqueda'];
+// Resto del código de manejo de resultados
+} else {
+// No se ha realizado ninguna búsqueda, puedes mostrar un mensaje o redirigir a la página de inicio, por ejemplo
+}*/
     ?>
+
 </main>
 
 </body>

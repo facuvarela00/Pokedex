@@ -1,4 +1,7 @@
-<!doctype html>
+<?php
+session_start();S
+?>
+    <!doctype html>
 <html lang="ES">
 <head>
     <meta charset="UTF-8">
@@ -10,39 +13,40 @@
 </head>
 <body>
 
+
 <?php
-session_start();
 include_once("../../header.php");
 ?>
 
-<main>
+<main>D
     <?php
     include_once("buscar_pokemon.php");
     include_once("../funciones.php");
 
     if( isset($_SESSION["usuario"]) ){
         if($pokemonPorNombre!=null){
-            mostrarLogged($pokemonPorNombre);
+
+        mostrarLogged($pokemonPorNombre);
         }else if ($pokemonPorNumero!=null){                 // UN IF POR SI EL USUARIO ESTA LOGGED
-            mostrarLogged($pokemonPorNumero);
+        mostrarLogged($pokemonPorNumero);
         }else if($pokemonPorTipo!=null){
-            foreach ( $pokemonPorTipo as $pokemon){
-                mostrarLogged($pokemon);}
+        foreach ( $pokemonPorTipo as $pokemon){
+        mostrarLogged($pokemon);}
         }else{
-            header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
-            exit();
+        header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
+        exit();
         }}
 
 
     else if(!isset($_SESSION["usuario"])){
         if ($pokemonPorNombre!=null){
-            mostrar($pokemonPorNombre);}                        // UN ELSE IF POR SI EL USUARIO NO ESTA LOGGED
-        else if($pokemonPorNumero!=null){
-            mostrar($pokemonPorNumero);}
+        mostrar($pokemonPorNombre);}                        // UN ELSE IF POR SI EL USUARIO NO ESTA LOGGED
+         else if($pokemonPorNumero!=null){
+        mostrar($pokemonPorNumero);}
         else if($pokemonPorTipo!=null){
-            foreach ( $pokemonPorTipo as $pokemon){
-                mostrar($pokemon);
-            };}
+        foreach ( $pokemonPorTipo as $pokemon){
+            mostrar($pokemon);
+        };}
         else{
             header("Location: /Pokedex/index.php");             // HAY QUE ARREGLAR QUE NOS TRAIGA TODA LA POKEDEX SI NO BUSCAMOS NADA
             exit();

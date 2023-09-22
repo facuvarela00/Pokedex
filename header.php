@@ -2,7 +2,6 @@
 
     echo '
     <header class="contenedor_header">
-    
     <article class="isologo_contenedor">
      <img class="logo_header" src="/Pokedex/Imagenes/Otras/pokeball_header.png" alt="Pokeball">
     <a style="text-decoration: none" href="/Pokedex/index.php"><h1 class="titulo_header">Pokédex</h1></a>

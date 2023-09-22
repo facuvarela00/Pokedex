@@ -6,7 +6,7 @@ html, body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-image: url('/Pokedex/Imagenes/Otras/fondo2.webp'); 
+    background-image: url('/Pokedex/Imagenes/Otras/fondo_info.png');
 }
 main {
     display: flex;
@@ -16,13 +16,13 @@ main {
 .tarjeta{
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
-    border: 2px solid rgb(211,63,89);
-    border-radius: 15%;
+    border: 5px solid rgb(211,63,89);
+    border-radius: 10%;
     margin: 2em;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    width: 40em;
+    background-color: whitesmoke;
+    width: 60em;
     height: auto;
 }
 img{
@@ -45,5 +45,4 @@ img{
 .datos2{
     color: black;
     text-align: center;
-
 }

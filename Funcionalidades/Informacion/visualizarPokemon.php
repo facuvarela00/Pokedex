@@ -8,16 +8,15 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon</title>
     <link rel="stylesheet" href="/Pokedex/Estilos/estilos.css">
-    <link rel="stylesheet" href="/Pokedex/Estilos/estilosPokemon.css">
 </head>
-<body>
+<body class="visualizarPokemonBody">
     <header>
     <?php
         include_once $_SERVER['DOCUMENT_ROOT'] . '/Pokedex/header.php';
     ?>
     </header>
     
-    <main>
+    <main class="visualizarPokemonMain">
 
         <?php
 
@@ -30,7 +29,7 @@ session_start();
         echo'
              <div class="tarjeta">
              <div class="imagenPokemon">';
-        echo'<img src="/Pokedex/Imagenes/Pokemon/'.$imagen.'" alt="Pokemon">';
+        echo'<img class="imagenVisualizada" src="/Pokedex/Imagenes/Pokemon/'.$imagen.'" alt="Pokemon">';
         echo'</div>
              <div class="info">';
         echo '<h1 class="datos">Nombre<br>'.$nombre.'</h1>';

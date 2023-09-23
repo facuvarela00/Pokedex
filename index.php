@@ -40,7 +40,9 @@ include_once("header.php");
     }
     ?>
 </main>
-
+<?php
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/Pokedex/footer.php';    
+    ?>
 </body>
 </html>
 <?php

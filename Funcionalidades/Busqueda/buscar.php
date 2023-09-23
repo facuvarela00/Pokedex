@@ -17,7 +17,7 @@ session_start();
 include_once ("header_buscar.php");
 ?>
 
-<main>D
+<main>
     <?php
     include_once("buscar_pokemon.php");
     include_once("../funciones.php");
@@ -48,6 +48,7 @@ include_once ("header_buscar.php");
         };}
         else{
             header("Location: /Pokedex/index.php");
+
             exit();
         };
     }
@@ -65,6 +66,8 @@ $busqueda = $_SESSION['busqueda'];
     ?>
 
 </main>
-
+<?php
+include_once ("../../footer.php");
+?>
 </body>
 </html>

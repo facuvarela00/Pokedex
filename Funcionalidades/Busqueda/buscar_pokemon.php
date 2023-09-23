@@ -12,7 +12,7 @@ if (isset($_GET["buscador"])) {
     $pokemonPorNumero=buscarPokemonPorNumero($aBuscar);
 
 }else {
-    header("Location: ../../index.php");
+    header("Location: /Pokedex/index.php");
     exit();
 }
 ?>

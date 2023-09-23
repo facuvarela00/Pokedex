@@ -34,7 +34,7 @@ $imagenTemporal=$_GET["imagen"];
 $_SESSION['imagenTemporal'] = $imagenTemporal;
 ?>
 
-    <h2 class="text-center, texto_header" >Modifique los datos que desee de <?php echo $nombre?></h2>
+    <h2 style="color:black" class="text-center, texto_header" >Modifique los datos que desee de <?php echo $nombre?></h2>
     <br><br>
     <form  class="formulario_alta" action="realizarModificacion.php" enctype="multipart/form-data" method="POST">
 

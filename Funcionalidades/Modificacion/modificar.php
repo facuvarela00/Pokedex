@@ -77,5 +77,10 @@ $_SESSION['imagenTemporal'] = $imagenTemporal;
         <input class="registrar" type="submit" value="Enviar">
     </form>
 </main>
+<footer>
+    <?php
+    include_once("../../footer.php");
+    ?>
+</footer>
 </body>
 </html>

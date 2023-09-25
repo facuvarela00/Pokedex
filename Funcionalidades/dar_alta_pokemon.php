@@ -48,7 +48,11 @@ $_SESSION['var'] = '1';
         <input class="registrar" type="submit" value="Registrar Pokémon">
     </form>
 </main>
-
+<footer>
+    <?php
+    include_once("../footer.php");
+    ?>
+</footer>
 
 </body>
 </html>

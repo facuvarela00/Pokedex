@@ -7,7 +7,7 @@
     <a style="text-decoration: none" href="/Pokedex/index.php"><h1 class="titulo_header">Pokédex</h1></a>
     </article>
     <article class="buscador_contenedor">
-     <form action="/Pokedex/Funcionalidades/Busqueda/buscar.php">
+     <form action="/Pokedex/Funcionalidades/Busqueda/buscar.php" class="form_header">
     <label for="busqueda"></label>
     <input type="text" id="buscador" name="buscador" placeholder="Buscar Pokémon">
     <input type="submit" id="envio_formulario" name="envio_formulario" value="¿Quién es éste Pokémon?">

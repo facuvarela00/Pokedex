@@ -125,12 +125,12 @@ header article{
 @media (max-width: 768px) {
 
     header {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
     .isologo_contenedor, .buscador_contenedor, .login_contenedor {
-        width: 100%; 
-        margin-bottom: 10px; 
+        width: 100%;
+        margin-bottom: 10px;
     }
     .buscador_contenedor{
         flex-direction: column;
@@ -138,18 +138,18 @@ header article{
         justify-content: center;
     }
     #buscador {
-        width: 80%; 
-        margin: 0 auto; 
+        width: 80%;
+        margin: 0 auto;
     }
 
     .login_contenedor form {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center; /
     }
 
     .login_contenedor form article {
-        width: 80%; 
-        margin-bottom: 10px; 
+        width: 80%;
+        margin-bottom: 10px;
     }
 
     #usuario, #pass {
@@ -482,7 +482,12 @@ header article{
         margin-top: 3em;
         margin-bottom: 3em;
     }
-    
+
+    .buscador_contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /*ESTILOS FOOTER*/
